@@ -133,3 +133,29 @@ body {
         transform: translate(-50%, -50%) rotateX(45deg) scale(0);
     }
 }
+
+.plate:checked {
+    counter-increment: list;
+}
+
+.score::after,
+.score,
+.total {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #6200ea
+}
+
+span {
+    user-select: none;
+}
+
+.score::after {
+    content: counter(list);
+}
+
+.score {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50px;
+}
